@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+char ChkAlpha(char ch)
+{
+    if(ch == 'A' || ch == 'a')
+    { 
+        printf("your exam is at 7AM");
+    }
+    else if(ch == 'B' || ch == 'b')
+    { 
+        printf("your exam is at 8.30AM");
+    }
+    else if(ch == 'C' || ch == 'c')
+    { 
+        printf("your exam is at 9.20AM");
+    }
+    else if(ch == 'D' || ch == 'd')
+    { 
+        printf("your exam is at 10.30AM");
+    }
+}
+
+int main() {
+    char cValue;
+    printf("Enter a character: ");
+    scanf("%c", &cValue);
+    
+    ChkAlpha(cValue);
+    return 0;
+}
