@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdbool.h>
+
+bool ChkAlpha(char ch)
+{
+    if(ch >= 'a' && ch <= 'z')
+    { return true; }
+    else
+    { return false; }
+}
+
+int main() {
+    char cValue,bRet = true;
+    printf("Enter a character: ");
+    scanf("%c", &cValue);
+    
+    bRet=ChkAlpha(cValue);
+    
+    if(bRet == true)
+    {  printf("It is small case character"); }
+    else
+    {  printf("It is not small case character"); }
+    return 0;
+}
